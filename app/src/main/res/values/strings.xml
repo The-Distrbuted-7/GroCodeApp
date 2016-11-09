@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">GroCode</string>
 
-    <string name="title_section1">Section 1</string>
-    <string name="title_section2">Section 2</string>
-    <string name="title_section3">Section 3</string>
+    <string name="title_section1">Home</string>
+    <string name="title_section2">Create list</string>
+    <string name="title_section3">Lists</string>
+    <string name="title_section4">Share list</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
