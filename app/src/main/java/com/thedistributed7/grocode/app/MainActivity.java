@@ -1,7 +1,6 @@
 package com.thedistributed7.grocode.app;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -44,11 +43,13 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
+        Toast.makeText(this,"Hello", Toast.LENGTH_SHORT).show();
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction()
                 .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
                 .commit();
     }
+
 
     public void onSectionAttached(int number) {
         switch (number) {
@@ -94,11 +95,8 @@ public class MainActivity extends AppCompatActivity
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-        Toast.makeText(this,"Hello", Toast.LENGTH_SHORT).show();
         //noinspection SimplifiableIfStatement
-        Intent intent = new Intent(MainActivity.this,LoginActivity.class);
-        finish();
-        startActivity(intent);
+
         if (id == R.id.action_settings) {
             return true;
         }
